@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Pasandida Girl </title>
+    <link rel = "stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bg-icons">
+  <span>⭐</span><span>❤️</span><span>🦋</span>
+  <span>❤️</span><span>⭐</span><span>🦋</span>
+  <span>⭐</span><span>❤️</span><span>🦋</span>
+  <span>❤️</span><span>⭐</span><span>🦋</span>
+
+  <div class="page">
+    <div id="heart-container"></div>
+    <!-- <p1>Happy Birthday, Beautifull ! 💕</p1><br> -->
+    <h1 class="title">Happy Birthday, Beautiful! 💕</h1>
+    <p>Happy Birthday to my girl, my best friend, my forever person 💕✨ I honestly don’t know how life would look without you by my side.
+      You’ve held me together on my worst days and celebrated me on my best ones. Every laugh, every tear, every late-night talk with you means 
+      the world to me 🥺🤍 Thank you for loving me exactly as I am and never leaving my side. 💖💫I have something special for you please scrolllll🥹🥹 </p>
+      <h5>Piiiiiiiilllllllliiiiiiiiiiizzzzzzzzzzzzzzzzz<img width="50px" src="https://i.pinimg.com/originals/18/50/a8/1850a80fa0e967bd8caf1d89fb78d8fe.gif" alt="gif"></h5><br>
+  </div>
+
+  <div class="page1">
+    <div class="heart-row">
+      <div class="heartsss">❤️</div>
+      <div class="heartsss">💗</div>
+      <div class="heartsss">💝</div>
+      <div class="heartsss">💖</div>
+      <div class="heartsss">💘</div>
+    </div><br>
+    <h6 id="request">👇🙌Click beeeelllooooowwwwwww !!!!!!!!!!!!!!!!!!! 🙌👇</h6><br><br>
+    <div id="box1">
+      <button onclick="showMemories(); startMusic();" id="click">Start the Celebration 🎉</button>
+    </div>
+  </div>
+
+  <div class="memories-title" id="memories">
+    <div id="box2">
+      <h2>❤️ Our Beautiful Memories ❤️</h2>
+    </div><br>
+    
+    <div class="page2">
+      <div id="bgcolor2">
+        <div id="images1">
+          <div class="cards" id="card1"></div>
+          <div class="cards" id="card2"></div>
+          <div class="cards" id="card3"></div>
+          <div class="cards" id="card4"></div>
+        </div><br>
+        <div id="images2">
+          <div class="cards" id="card5"></div>
+          <div class="cards" id="card6"></div>
+          <div class="cards" id="card7"></div>
+          <div class="cards" id="card8"></div>
+        </div><br>
+        <div id="images3">
+          <div class="cards" id="card9"></div>
+          <div class="cards" id="card10"></div>
+          <div class="cards" id="card11"></div>
+          <div class="cards" id="card12"></div>
+        </div><br>
+        <div id="images4">
+          <div class="cards" id="card13"></div>
+          <div class="cards" id="card14"></div>
+          <div class="cards" id="card15"></div>
+          <div class="cards" id="card16"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page3"><br>
+      <h2 id="sg">🎁 Oyeee, I have a surprise gift just for you, and to get it, you’ll have to double click on this below gift box 🎁</h2><br>
+      <div class="container1">
+        <button id="giftbox">🎁</button>
+        <div id="message">
+          <p>😂🤣🤣🤣🤣🤣😂😂😂 <br><b>Ohhhhhh whatttttt? You thought the gift would be this easy to get? Hehee, not a chanceeee 😌😏<br><br>
+            If you really want this gift, you’ll have to put in a little effort, jaan 💕<br><br>You have to solve this below puzzle and 
+            tell me the answer-let's see how strong your memory power issss 😏 <br><br>Let's see how much you remember our 
+            sweet-sweet moments that we spent together … all those little memories that make me smile 💖💖</b>
+          </p>
+        </div>
+      </div><br><br><br><br><br><br><br>
+    </div>
+
+    <h2>🧩 Memory Puzzle Game</h2><br>
+    <h4>👇👇Here you choose difficulty level according to you , In which level you want solve the puzzle ?🤔🤗👇👇</h4>
+
+    <!-- Difficulty -->
+    <div class="block">
+      <button onclick="setLevel(2)">Super Easy (2×2)</button>
+      <button onclick="setLevel(3)">Easy (3×3)</button>
+      <button onclick="setLevel(4)">Medium (4×4)</button>
+      <button onclick="setLevel(5)">Difficult (5×5)</button>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+      <div class="block">⏱ Time: <span id="timer">0</span>s</div>
+      <div class="block">🔢 Moves: <span id="moves">0</span></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="block">
+      <button onclick="newGame()">🔄 New Game</button>
+      <button onclick="showSolution()">👁 Show Solution</button>
+    </div>
+
+    <h5>👇❌Oyeeeeeee, you are not allowed to use the hint, madammmm!❌👇</h5>
+
+    <!-- Hint Button -->
+    <div class="block">
+      <button onclick="toggleHint()">👀 Hint Image</button>
+    </div>
+
+    <h5>👆🫶Kya huaaa? Stuck already? Missing me too much kya? 😆💘
+    Achaaa fineee, only because you’re cute, go ahead and use the hint nowww 😍🫶👆</h5>
+
+    <!-- Hint Image Box -->
+    <div id="hintBox" class="hint hidden">
+      <img id="hintImage" alt="Hint Image">
+    </div>
+
+    <!-- Puzzle -->
+    <div id="puzzle" class="puzzle"></div>
+
+    <!-- Win Section -->
+    <div id="winSection" class="hidden">
+      <h3>🎉Hurraaayyyyyyyy!!!!! 🥳🥳🥳🥳 <br>You Solved It! 🎉🎉🎉🎉<br>
+        Here is your surprise gift box, now you can open it, just click on it 😁😁😁
+      </h3>
+      <div id="gift" onclick="openGift()" class="gift-box">🎁</div>
+      <p id="giftMsg" class="hidden gift-text">
+        <b>Surpriseeeeeeeeeeeeeeeeeeeee! 🎁😜 <br><br> 💝 Your gift is <b>ME</b> 💝<br>Congratulations 🎉 you won me 🥰<br>
+        💝 There’s no return policy, no exchange option, and absolutely no refund 😌 <br>I come with unlimited love, a little bit of drama, lots of laughs, and endless care just for you 💕<br>
+        From today till forever and ever ♾️, I’m yours — to support you, annoy you, make you smile, <br>and love you in every possible way 🥹💖 Handle with love, because this gift is priceless 😘✨</b>
+      </p>
+    </div><br><br>
+    <div id="confetti"></div>
+
+    <img width="250px" src="https://www.icegif.com/wp-content/uploads/2022/08/icegif-593.gif" alt="gif">
+
+    <div id="video">
+      <h3>Do youu want to listen something click on the below button. <br>I hope this song reaches you the way it reached me. “I sang this with you in my mind.”🤗 <br>👇Tap play and feel the song.👇</h3>
+      <br><br>
+      <!-- Video -->
+      <div class="video-wrapper">
+        <video id="myVideo" controls class="hidden">
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support video.
+        </video>
+
+        <!-- Play Button -->
+        <button id="playBtn" onclick="playVideo()" class="play-btn">▶ Play Video</button>
+        <br>
+      </div>
+    </div>
+
+    <div id="bgcolor">
+      <h5 id="qa">Oyeee what you think madammmm!!!!! 😂 Its end here ? Not at all, 🤭<br> actually i want to play a game with you, do you want it ? 🤔🤗 <br> If you really want to play click on the below button 🤭🫣🫶👇</h5><br>
+      <button  id="play" >I want to play 😍</button>
+      <div id="gameContainer" class="container">
+        <div class="qa-box">
+          <img id="cartoonImg" src="image2/imag1.gif" class="cartoon">
+
+          <p id="question" class="question">
+          Do you promise to keep me forever? 🥹💖
+          </p>
+
+          <div class="buttons">
+            <button id="yesBtn">Yes 😍</button>
+            <button id="noBtn">No 🙈</button>
+            <button id="loveBtn" class="hidden">I Love you 💖</button>
+          </div>
+        </div>
+        <div id="heartbox"></div><br><br>
+      </div>
+    </div>
+    <div id="feelings">
+      <div id="text-message">
+        <h2>A Special Message for You</h2>
+        <p>Wishing you a very happiest birthday to my favourite person, my safe place, and my forever. You are my today and all my tomorrows 💫❤️
+          On your birthday, I just want to remind you how special you are to me. You are not just a part of my life, you are my happiness, my comfort,
+          and my favourite feeling. Every smile of yours makes my world brighter. I pray that all your dreams come true and that i get to stand beside 
+          you in every moment, today and always. 💖 Your presence turns ordinary days into beautiful memories. You don’t even realize how much you mean to me.
+          You are the reason behind my smiles, my strength on hard days, and my peace in chaos. Thank you for being you. I promise to love you in every mood, 
+          every season, and every chapter of life. Always yours 💝 Thank you for making my life sweeter, brighter, and a little crazier in the best way. I hope 
+          your birthday is as beautiful, cute, and special as you are… and yes, I’m part of your gift forever 😏🎁
+        </p>
+        <h6>Wishing you a very happiest birhday dear, May your birthday be the beginning of a year filled with love,<br> laughter, and everything your heart wishes for.💕</h6><br>
+          <div class="heart-row2">
+            <div class="heart2">💖</div>
+            <div class="heart2">💕</div>
+            <div class="heart2">💗</div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <audio id="bgMusic" src="music/song.mp3" autoplay loop></audio>
+  <script src="script.js"></script>
+
+</body>
+</html>
