@@ -9,6 +9,7 @@ html,body{
 }
 
 body {
+  zoom:120%;
   overflow-x: hidden;
   margin: 0;
   height: 100%;
@@ -863,5 +864,6 @@ video {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
 
 
