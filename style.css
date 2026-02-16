@@ -627,7 +627,7 @@ body.win-bg {
 #gameContainer{
   margin-left: 30%;
   text-align: center;
-  height: 120vh;
+  max-height: 530px;
   font-family: Arial, sans-serif;
   display: none;
 }
@@ -864,6 +864,7 @@ video {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
 
 
 
