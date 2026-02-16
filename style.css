@@ -11,7 +11,7 @@ html,body{
 body {
   overflow-x: hidden;
   margin: 0;
-  height: 100vh;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
 }
 .page {
@@ -146,8 +146,8 @@ h5{
   border-style: solid;
   box-shadow: 0 0 30px rgba(243, 4, 100, 0.6);
   transition: 0.3s ease;
-  height: 200px;
-  width: 180px;
+  min-height: 200px;
+  min-width: 180px;
   border-radius: 10px;
   background-color: #e63946;
   background-position:center;
@@ -438,8 +438,8 @@ h2 {
 
 .confetti-piece {
   position: absolute;
-  width: 10px;
-  height: 14px;
+  max-width: 10px;
+  max-height: 14px;
   opacity: 0.8;
   animation: fall 3s linear infinite;
 }
@@ -512,7 +512,7 @@ body.win-bg {
   padding: 10px;
   background: white;
   border-radius: 15px;
-  width: 220px;
+  max-width: 220px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   animation: fadeIn 0.5s ease;
 }
@@ -563,8 +563,8 @@ body.win-bg {
     gap: 15px; /* space between video & button */
 }
 #myVideo{
-  width: 250px;
-  height: 350px;
+  max-width: 250px;
+  max-height: 350px;
   border-radius: 20px;
   border-color: black;
   border-style: solid;
@@ -638,14 +638,14 @@ body.win-bg {
 .qa-box {
   background: rgba(19, 19, 19, 0.934);
   padding: 25px;
-  width: 330px;
+  max-width: 330px;
   border-radius: 25px;
   box-shadow: 0 0px 35px rgba(243, 3, 195, 0.468);
   animation: fadeIn 1s ease;
 }
 .cartoon {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   object-fit: contain;
   animation: bounce 1.5s infinite;
 }
@@ -755,7 +755,7 @@ body.win-bg {
 #text-message{
   background-color: rgba(147, 148, 221, 0.867);
   margin-top: 30px;
-  height: 400px;
+  max-height: 400px;
   width: 50%;
   border-color:rgba(147, 148, 221, 0.867) ;
   border-radius: 20px;
@@ -863,4 +863,5 @@ video {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
 
